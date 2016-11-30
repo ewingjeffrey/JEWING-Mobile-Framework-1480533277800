@@ -1,8 +1,12 @@
 applications:
-- name: Kitura-Starter
-  memory: 256M
+- path: .
+  memory: 128M
   instances: 1
-  random-route: true
+  domain: mybluemix.net
+  name: JEWING Mobile Framework
+  host: JEWING-Mobile-Framework
   disk_quota: 1024M
-  command: Kitura-Starter
-  buildpack: swift_buildpack
+  services:
+  - Jeff's Secure Gateway Service
+  - Jeff's Blockchain Ledger
+  - Jeff's New Relic Performance Monitor
